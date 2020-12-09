@@ -62,3 +62,18 @@ Then in the canvas we put a Text component (in our case TextMeshPro) and we chan
 As a result the text is position in the top right of our canvas.
 We also put another text that is the text that is going to be displayed when the user collects the necessairy pickups and we call it **Win Text** which at first we **setActive(false)** in order to hide it.
 And as a result we can we that even is since is grayed out in the inspector is also not showing in the project.
+
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Canvas%20%2B%20Text.PNG "Canvas and Text")
+
+Last but not least, we create a certain condition that when the user graps more than 10 pickups then the **Win Text** will appear.
+
+```C#
+  private void SetCountText()
+    {
+        countText.text = "Count: " + count.ToString();
+        if(count > 10)
+        {
+            winTextObject.SetActive(true);
+        }
+    }
+```
