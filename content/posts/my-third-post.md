@@ -19,3 +19,5 @@ Next we have to find a way to move our player, this is done thought the Unity's 
 In order for our player to move we have to add the rigidbody component, so that when the keys are pressed, we add a constant force.
 
 After the player movemement is being set up we move to change the position of the camera as well as how it moves according to the player.
+Last but not least, in our player script, we also attach the text that is going to change as well as the winning text if the user reaches the desired score.
+Finally we have the following components attached to our player.
