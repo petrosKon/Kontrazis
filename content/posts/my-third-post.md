@@ -21,3 +21,8 @@ In order for our player to move we have to add the rigidbody component, so that 
 After the player movemement is being set up we move to change the position of the camera as well as how it moves according to the player.
 Last but not least, in our player script, we also attach the text that is going to change as well as the winning text if the user reaches the desired score.
 Finally we have the following components attached to our player.
+
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Player%20Components.PNG "Player components")
+
+Then the next part we create is our environment, a.k.a the walls and we place them at the edge of our plane, so that our player can not pass through them.
+
