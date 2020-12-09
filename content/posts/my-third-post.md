@@ -26,3 +26,33 @@ Finally we have the following components attached to our player.
 
 Then the next part we create is our environment, a.k.a the walls and we place them at the edge of our plane, so that our player can not pass through them.
 
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Walls-Environment.PNG "walls")
+
+Next we move to our pickups, which are collactables that the player needs to pick up in order to win the game. We want to use the same type of pickup so we make a prefab of each. A prefab is an object that can be used multiple times into our scene and they share the same properties.
+After creating prefab, we want our player trigger a condition whe he/she picks up an object.
+In order to do so we user the function **OnTriggerEnter**, this is an override function which executes when an object is triggering with this object's collider. As a result we also mark the object's collider as trigger.
+We override the **OnTriggerEnter** into our **PlayerController** script. But what happens if there is another object that has also a trigger as a collider but we do not want the same functionallity?
+In order to avoid this problem, we specify a tag for our pickup, so that the right kind of actions happens when we touch this item.
+
+```C#
+ private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("pickup"))
+        {
+            other.gameObject.SetActive(false);
+            count++;
+            SetCountText();
+
+        }
+    }
+```
+With the specification of the tag for our pickup and the compareTag method we can specify what will happen if our player touches our object.
+Last but not least, we also attach a script to our pickups so that they are not static and they rotate over time, in order to create an effect.
+Time.delta is required so that our rotation is frame indipendant, because the Update functions runs on different frames depending on the computer's hardware.
+
+```C#
+  void Update()
+    {
+        transform.Rotate(new Vector3(15,30,45) * Time.deltaTime);
+    }
+```
