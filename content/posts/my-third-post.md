@@ -56,3 +56,9 @@ Time.delta is required so that our rotation is frame indipendant, because the Up
         transform.Rotate(new Vector3(15,30,45) * Time.deltaTime);
     }
 ```
+
+Then for the last part, we need our UI in order to show the player the progress of how many items he/she has collected, we then put a canvas into our scene.
+Then in the canvas we put a Text component (in our case TextMeshPro) and we change the anchor position to the top right.
+As a result the text is position in the top right of our canvas.
+We also put another text that is the text that is going to be displayed when the user collects the necessairy pickups and we call it **Win Text** which at first we **setActive(false)** in order to hide it.
+And as a result we can we that even is since is grayed out in the inspector is also not showing in the project.
