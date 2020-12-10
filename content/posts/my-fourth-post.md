@@ -12,4 +12,10 @@ After that we drag and drop and **OVRCameraRig** into our project and we and we 
 
 ![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Added%20Controller.PNG "Added controllers")
 
-Then we change our canvas to **World Space** so it is rendered as a 3d object in order for our user to see it.
+Then we change our canvas to **World Space** so it is rendered as a 3D object in order for our user to see it.
+
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Canvas%20World%20Space.PNG "Canvas World Space")
+
+Then we proceed to attach the colliders as well as rigidbodies in each object, so that the user can pick up the whole roll-a-ball board. We add a collider to our roll-a-ball and we also add a layer marked as Selectable but the children of our roll-a-ball game are marked with another layer named: roll-a-ball.
+The result of this implementation, is that the colliders wouldn't co-exist meaning, they won't intersect and cause the **OnTriggerFunction** to trigger each time.
+In order to disable the triggering, we change that through the player settings.
