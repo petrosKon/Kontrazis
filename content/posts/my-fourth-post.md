@@ -19,3 +19,35 @@ Then we change our canvas to **World Space** so it is rendered as a 3D object in
 Then we proceed to attach the colliders as well as rigidbodies in each object, so that the user can pick up the whole roll-a-ball board. We add a collider to our roll-a-ball and we also add a layer marked as Selectable but the children of our roll-a-ball game are marked with another layer named: roll-a-ball.
 The result of this implementation, is that the colliders wouldn't co-exist meaning, they won't intersect and cause the **OnTriggerFunction** to trigger each time.
 In order to disable the triggering, we change that through the player settings.
+
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Layers%20%26%20Colliders.PNG "Layers & Colliders")
+
+Since we added our colliders and rigidbodies we then proceed to create our logic behind our grab. We create a new script called MySelect and we attach in each controller.
+This code permits the user to grab into an object when he/she presses the **Index trigger button**.
+We get the information of our index trigger using **OVRInput** and then inside our **Update** method we contiounsly check if the user presses the index trigger above a certain threshold which is over **>0.95f**.
+The value that the index trigger provides us is a float and not a boolean so that it permits it to trigger our functions in different points.
+
+```C#
+triggerValue = OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger, controller);
+```
+
+The controller parameter is a parameter that we can modify in our inspector.
+After the user pushes the button, then what we do is make this gameobject child of the transform of the object that is supposed to grab it. Making an object child is a simple way to simulating of grabbing an object, because the child's transform follows the parent's with an offset.
+In order to properly change the transform of a gameobject since it contains a rigidbody, we disable the gravity component and we make it kinematic, so that the physics won't interrupt our grab.
+Last but not least, we set the controller velocity and angular velocity equals to zero.
+
+```C#
+  Rigidbody rb = selectedObj.GetComponent<Rigidbody>();
+                rb.isKinematic = true;
+                rb.useGravity = false;
+                rb.velocity = Vector3.zero;
+                rb.angularVelocity = Vector3.zero;
+```
+
+We must also think what will happen if the user decides to release the trigger, then first of all we unparent the object. Secondly we enable again the gravity so that our object could be affected by the Unity physics engine.
+Last but not least, we want the user to be able to throw the the whole system, this is done by grabbing the controllers velocity as well angular velocity the moment when the user releases the trigger button.
+
+```C#
+  rb.velocity = OVRInput.GetLocalControllerVelocity(controller);
+  rb.angularVelocity = OVRInput.GetLocalControllerAngularVelocity(controller);
+```
