@@ -51,3 +51,5 @@ Last but not least, we want the user to be able to throw the the whole system, t
   rb.velocity = OVRInput.GetLocalControllerVelocity(controller);
   rb.angularVelocity = OVRInput.GetLocalControllerAngularVelocity(controller);
 ```
+
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Final%20Configuration.PNG "Final Configuration")
