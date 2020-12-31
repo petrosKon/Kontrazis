@@ -1,7 +1,7 @@
 ---
 title: "Hyper Reality Problems"
 date: 2020-12-05T22:42:25+02:00
-draft: true
+draft: false
 ---
 
 The hyper reality video presents the  distopian future in which Mixed reality is taking over our lives. Throughout the video it shows the different aspects of mixed reality and how they can potentially change the our lives.
