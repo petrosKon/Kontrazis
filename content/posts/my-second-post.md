@@ -1,7 +1,7 @@
 ---
 title: "Ultimate Display"
 date: 2020-12-07T12:20:31+02:00
-draft: true
+draft: false
 ---
 
 From the description of the ultimate display it fits in the top left of the reality-virtual continium  because it is a physical display with many different types of input.

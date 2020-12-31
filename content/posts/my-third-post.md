@@ -1,7 +1,7 @@
 ---
 title: "First Lab: Roll a ball"
 date: 2020-12-07T12:56:47+02:00
-draft: true
+draft: false
 ---
 
 The point of the first lab is to create a roll a ball game. This example is compromised of different elements : 1) The player 2) The environment 3) Pickups - Different Objects.

@@ -1,7 +1,7 @@
 ---
 title: "VR Roll-A-Ball"
 date: 2020-12-09T14:11:36+02:00
-draft: true
+draft: false
 ---
 
 The next part of our lab is to extend the roll a ball game into a VR Project where the user is able to grab the whole configuration and play it as a stationary roll a ball game (like the toys, the kids used to play).

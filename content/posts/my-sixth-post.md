@@ -1,7 +1,7 @@
 ---
 title: "Superpower VR"
 date: 2020-12-31T12:25:10+02:00
-draft: true
+draft: false
 ---
 
 To be honest the idea of the gesture recognition came to me when I first saw this video: https://www.youtube.com/watch?v=lBzwUKQ3tbw
