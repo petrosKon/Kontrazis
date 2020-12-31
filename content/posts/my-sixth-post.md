@@ -177,3 +177,16 @@ This angle is set so that the user would be able to initialize the locomotion te
 These lines of code are the locomotion technique using our hand. We have a starting speed and then gradually increase the speed of our player. We also set a max speed so that the player doesn't go too fast or too slow.
 Then we update the **HMD** according to where the hmd is looking and in correspondance with the hand position and as the result the player moves forward.
 These functions are placed in the inspector.
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Inspector%20Gesture%20Recognizer.PNG "Gesture Recognizer")
+Last but not least, we have to also need to stop the movement when the user does the stop gesture. This is pretty simple to do, since we do not need to do anything, since the only way to update our speed is by doing the superman fist.
+When the player stops then, we just set the value of the starting speed to 1.
+```C#
+    public void StopMovement()
+    {
+
+        startingSpeed = 1f;
+    }
+```
+This is all the code as well as logic for our locomotion technique, also we can see a final implementation in this video:
+
+https://www.dropbox.com/s/kqynksk9aepcyvg/2%20-%20Evaluation%20of%20Locomotion%20Technique.mp4?dl=0
