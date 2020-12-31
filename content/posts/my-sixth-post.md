@@ -146,4 +146,34 @@ Now we will move to the code that makes our **VR player** move around like our s
 
 and we need a second gesture in order for our player to stop.
 ![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Gesture%20-%20Stop.png "Stop Gesture")
-		
+Then we need two specify the relative position of the two axis, the **HMD** axis which is located in the **CenterEyeAnchor** as well as the **Hand** axis.
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/HMD%20-%20Local%20Transform.png "HMD Local Axis")
+We see in the above image that it is aligned with the world coordinates. Whereas the hand coordinates system looks like this.
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Hand%20-%20Local%20Transform%20Upwards.png "Local hand axis")
+We need these coordinates systems because, we want our player to start moving when he is doing a first but also when that fist is aligned with the **HMD** transform system. We can see that the transform systems point to different directions and as a result we take the following angles.
+```C#
+        float angleBetweenHandAndHMD = Vector3.Angle(skeleton.transform.right, hmdCenterEyeAnchor.transform.forward);
+```
+We take the right angle of our hand (red axis), because it is pointing backwards, when our hand is aligned. We then proceed to find an angle that is not too restrictive but as well as not too lose. The angle between the hand and **HMD** will enable to user to turn, when he/she turn both his/her hand as well as its head.
+We then take another angle.
+```C#
+        float angleBetweenYAxisAndHMD = Vector3.Angle(skeleton.transform.up, hmdCenterEyeAnchor.transform.up);
+```
+This angle is set so that the user would be able to initialize the locomotion technique only when he/she holds the hand upwards and not downwards.
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Hand%20-%20Local%20Transform%20Downwards.png "Hand Backwards")
+```C#
+        if (angleBetweenHandAndHMD > angleThresholdHandAndHMD && angleBetweenYAxisAndHMD < angleThresholdYAxisAndHMD)
+        {
+            startingSpeed += (0.03f + Time.deltaTime);
+
+            if (startingSpeed > maxSpeed)
+            {
+                startingSpeed = maxSpeed;
+            }
+
+            cameraTransform.transform.position += hmdCenterEyeAnchor.transform.forward * startingSpeed * Time.deltaTime;
+	}
+```
+These lines of code are the locomotion technique using our hand. We have a starting speed and then gradually increase the speed of our player. We also set a max speed so that the player doesn't go too fast or too slow.
+Then we update the **HMD** according to where the hmd is looking and in correspondance with the hand position and as the result the player moves forward.
+These functions are placed in the inspector.
