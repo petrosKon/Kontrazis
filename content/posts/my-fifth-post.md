@@ -13,3 +13,11 @@ The idea of this non-linear locomotion technique is that a user would grow up in
 The reason I have not implemented this idea, is mainly because I thought it was off the time limit of the course. It would require rigorous implementation and the problems that may have arisen, would be greater than the other two implementations.
 
 My second idea, is a gesture based locomotion techique. The user would do basic gestures and as a result, the VR camera will move accordingly.
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Gesture%20-%20Poiting%20Forward.png "Pointing Forward")
+For example the image above, shows a basic implementation. When the user points forward, he/she moves forward.
+![alt text](https://github.com/petrosKon/Kontrazis/blob/master/static/images/Gesture%20-%20Poiting%20Left.png "Pointing Left")
+This gesture would enable user to move left for example and you can imagine how the rest it goes on.
+![alt text](https://github.com/petrosKon/Kontrazis/blob/master/static/images/Gesture%20-%20Poiting%20Upwards.png "Pointing Upwards")
+But that locomotion technique, had some serious problem when I tried to implement it. First of all, it required the user to remember all these different gestures and it was easy to make a mistake. Then the track itself beautifuly demostrated a huge problem in this approach, an different aproach would have to be used on incline surfaces. An example would be a raycasting from the player's head to detect if the ground is inclined or declined in order to update the position of the player.
+This is not that hard to implement, but I believe it would create glitches. So, when I was experimentating of a way to bypass this problem, I came up with another idea which is more linear as well as more fun!!
+In VR we don't want to be boring individuals, we want something special, something different. The approach was not different or special but it made the user feel special. We are talking about a **Superman** locomotion technique.
