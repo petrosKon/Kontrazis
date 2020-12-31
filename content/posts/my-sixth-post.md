@@ -145,4 +145,5 @@ Now we will move to the code that makes our **VR player** move around like our s
 ![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Gesture%20-%20VR%20Superman.png "VR Superman")
 
 and we need a second gesture in order for our player to stop.
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Gesture%20-%20Stop.png "Stop Gesture")
 		
