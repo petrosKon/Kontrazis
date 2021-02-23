@@ -21,4 +21,4 @@ Last but not least, the last gesture:
 This gesture create an explosion like particle effect which is cool for demonstation.
 The conclusion of my presentation was the evaluation of the locomotion technique which was also mentioned in another blogpost.
 
-Also you can find the slides of my presentation: [inline-style link](https://docs.google.com/presentation/d/1YQ65VyhB65odY4cq7HV8ht6whkxT4eplRuuw39FOiBY/edit?usp=sharing)
+Also you can find the slides of my presentation: [Presentation](https://docs.google.com/presentation/d/1YQ65VyhB65odY4cq7HV8ht6whkxT4eplRuuw39FOiBY/edit?usp=sharing)
