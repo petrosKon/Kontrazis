@@ -14,3 +14,6 @@ This gesture is the first extra gesture I recorded, it enables the user to fire 
 The second gesture:
 ![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Open%20Hand%20Gesture.PNG)
 This gesture is inspired from the game **super smash bros melee** where the last boss, is a giant hand and is able to fire laser, when doing that particular pose.
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Hand%20Super%20Smash%20Bros.PNG)
+The only difference is that instead of firing lasers from each finger, we are firing a huge laser from the middle.
+Last but not least, the last gesture:
