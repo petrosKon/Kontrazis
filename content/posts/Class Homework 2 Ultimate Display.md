@@ -1,6 +1,6 @@
 ---
 title: "Class Homework 2: Ultimate Display"
-date: 2020-12-07T12:56:47+02:00
+date: 2020-12-07T12:20:31+02:00
 draft: false
 ---
 
