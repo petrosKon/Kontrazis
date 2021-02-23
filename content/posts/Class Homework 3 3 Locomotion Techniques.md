@@ -1,6 +1,6 @@
 ---
 title: "Class Homework 3: 3 Locomotion Techniques"
-date: 2020-12-10T15:54:48+02:00
+date: 2020-12-07T12:56:47+02:00
 draft: false
 ---
 

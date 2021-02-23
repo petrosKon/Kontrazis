@@ -1,6 +1,6 @@
 ---
 title: "Lab Homework 3: Roll a ball"
-date: 2020-12-07T12:20:31+02:00
+date: 2021-02-23T20:39:47+01:00
 draft: false
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Class Homework 4: Evaluate your Locomotion Technique"
-date: 2021-02-23T21:16:40+01:00
+date: 2020-12-09T14:11:36+02:00
 draft: false
 ---
 

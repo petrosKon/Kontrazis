@@ -1,6 +1,6 @@
 ---
 title: "Class Homework 5: Final Presentation"
-date: 2021-02-23T21:53:14+01:00
+date: 2020-12-10T15:54:48+02:00
 draft: false
 ---
 
