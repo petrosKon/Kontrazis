@@ -1,7 +1,7 @@
 ---
 title: "Class Homework 5: Final Presentation"
 date: 2021-02-23T21:53:14+01:00
-draft: true
+draft: false
 ---
 
 The structure of the presentation goes as follows: 1. Motivation 2. Usage 3. Implementation 4. Bonus Gestures 5. Conclusion.
@@ -17,3 +17,8 @@ This gesture is inspired from the game **super smash bros melee** where the last
 ![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Hand%20Super%20Smash%20Bros.PNG)
 The only difference is that instead of firing lasers from each finger, we are firing a huge laser from the middle.
 Last but not least, the last gesture:
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Explosion%20Gesture.PNG)
+This gesture create an explosion like particle effect which is cool for demonstation.
+The conclusion of my presentation was the evaluation of the locomotion technique which was also mentioned in another blogpost.
+
+Also you can find the slides of my presentation: [inline-style link](https://docs.google.com/presentation/d/1YQ65VyhB65odY4cq7HV8ht6whkxT4eplRuuw39FOiBY/edit?usp=sharing)
