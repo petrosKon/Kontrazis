@@ -1,5 +1,5 @@
 ---
-title: "Hyper Reality Problems"
+title: "Class Homework 1: Hyper Reality Problems"
 date: 2020-12-05T22:42:25+02:00
 draft: false
 ---

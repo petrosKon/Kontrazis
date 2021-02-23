@@ -1,5 +1,5 @@
 ---
-title: "Superpower VR"
+title: "Lab Homework 5: Superpower VR"
 date: 2020-12-31T12:25:10+02:00
 draft: false
 ---

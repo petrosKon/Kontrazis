@@ -1,5 +1,5 @@
 ---
-title: "VR Roll-A-Ball"
+title: "Lab Homework 3: VR Roll-A-Ball"
 date: 2020-12-09T14:11:36+02:00
 draft: false
 ---

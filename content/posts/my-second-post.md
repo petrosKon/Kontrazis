@@ -1,5 +1,5 @@
 ---
-title: "First Lab: Roll a ball"
+title: "Lab Homework 3: Roll a ball"
 date: 2020-12-07T12:20:31+02:00
 draft: false
 ---
