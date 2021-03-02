@@ -29,3 +29,5 @@ This gesture create an explosion like particle effect which is cool for demonsta
 The conclusion of my presentation was the evaluation of the locomotion technique which was also mentioned in another blogpost.
 
 Also you can find the slides of my presentation: [Presentation](https://docs.google.com/presentation/d/1YQ65VyhB65odY4cq7HV8ht6whkxT4eplRuuw39FOiBY/edit?usp=sharing)
+
+Last but not least, a video of me using the final system with new superpowers: [Video](https://www.dropbox.com/s/v7cbhs2zhxhhysy/4%20-%20VR%20Superman%20-%20Powers%20showcase.mp4?dl=0)
