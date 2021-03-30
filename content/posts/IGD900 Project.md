@@ -44,3 +44,17 @@ The script that was able to do that, was the following:
 What this snip of code basically does is get all the points of the guardian that Oculus gives us. But we realise that this code didn't worked when the Oculus Quest Link was enabled, so we needed to find another way to create our experience. 
 So, in order to solve that problem, I designed a multiplayer game. One player would be able to player from PC and control as previously said the balls that was throwing to our player and the other player would playr from VR.
 This multiplayer experience was created using **Photon**, a framework that makes the development of multiplayer experiences real fast.
+When a player enter the application then he/she automatically joins a room that is assigned by me. In order to be able to stream the data from the Oculus to the other player we use the following script:
+```C#
+  void MapOculusPositions(Transform target, XRNode node)
+    {
+        InputDevices.GetDeviceAtXRNode(node).TryGetFeatureValue(CommonUsages.devicePosition, out Vector3 position);
+        InputDevices.GetDeviceAtXRNode(node).TryGetFeatureValue(CommonUsages.deviceRotation, out Quaternion rotation);
+
+        target.localPosition = position;
+        target.rotation = rotation;
+    }
+```
+We get the position and location directly from Unity's Input system and we stream that data to the player in the monitor. We need both the position and rotation so that we know where our VR player is at any given time.
+Instead of just creating and implementing the multiplayer functionality, we also changed our scene, so that it seems more realistic to our player.
+
