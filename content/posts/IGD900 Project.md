@@ -4,7 +4,7 @@ date: 2021-03-29T21:53:14+01:00
 draft: false
 ---
 
-Have you ever played VR and accidentally hit your hand over a wall? Have you ever played VR and managed to break something in your house?
+Have you ever played VR and accidentally hit your hand over a wall? Break something in your house?
 As it turns out, you are not alone, it is not uncommon when using VR you may sometimes hit or break something. There is even a popular term on Youtube called **VR Fails** that yield way too many results and videos with a huge amount of views.
 This introduction was to describe to you what we wanted to explore with this project. An application that would be able to cause **Harm** to the user.
 But this harm is for a good reason, we needed to point out parameters that would make an application marked as "Harmful".
@@ -94,6 +94,7 @@ In order to make the fruit cutting even more enganging we added a crowd. This cr
 ![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Fruit%20Ninja%20-%20Geishas.PNG)
 The last thing that would make the user even more enganged with our game was to add a combo counter. The combo meter would increase each time the user makes a successful cut on a fruit and return to 0 if he/she fails to cut one.
 ![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Fruit%20Ninja%20-%20Combo%20Counter.PNG)
+Last but not least, I need to mention one last feature I added but didn't make it to the last version.
 
 
 
