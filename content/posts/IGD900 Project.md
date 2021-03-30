@@ -100,7 +100,7 @@ In the night the ninja would appear in front of the user and throw shurikens. Th
 ![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Fruit%20Ninja%20-%20Ninja.PNG)
 The ninja didn't fit our purpose because we wanted a more methodical approach of how the user will pass the boundaries. Instead of making random clicks, we pre-recorded a sequence of fruit throwing and play it on each participant.
 
-To conclude, the final implementation can be seen here: [inline link with title](https://www.youtube.com/watch?v=0ph16W51JTA, "Fruit Ninja")
+To conclude, the final implementation can be seen here: [Fruit Ninja - Harmful VR](https://www.youtube.com/watch?v=0ph16W51JTA, "Fruit Ninja")
 
 
 
