@@ -94,7 +94,12 @@ In order to make the fruit cutting even more enganging we added a crowd. This cr
 ![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Fruit%20Ninja%20-%20Geishas.PNG)
 The last thing that would make the user even more enganged with our game was to add a combo counter. The combo meter would increase each time the user makes a successful cut on a fruit and return to 0 if he/she fails to cut one.
 ![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Fruit%20Ninja%20-%20Combo%20Counter.PNG)
-Last but not least, I need to mention one last feature I added but didn't make it to the last version.
+Last but not least, I need to mention one last feature I added but didn't make it to the last version. A ninja. This scene has everything, so it wouldn't be nice if it missed a ninja. The ninja's job was also to push the player out of boundaries.
+In order to create the ninja I also added a day-night cycle so that the ninja would appear only at night.
+In the night the ninja would appear in front of the user and throw shurikens. The player would then have to step out of the ninja's way because the combo would be broken. This feature although really cool and really fitted the narrative didn't make it to the last version because we changed a little bit our approach of how we wanted the user to hit the boundaries.
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Fruit%20Ninja%20-%20Ninja.PNG)
+The ninja didn't fit our purpose because we wanted a more methodical approach of how the user will pass the boundaries. Instead of making random clicks, we pre-recorded a sequence of fruit throwing and play it on each participant.
+To conclude, the final implementation can be seen here: [inline style link with title](https://www.youtube.com/watch?v=0ph16W51JTA)
 
 
 
