@@ -79,6 +79,8 @@ Now we will talk about our new scene, the fruit slicing one. We found out during
 First of all, we changed the scenery. The slicing in our game is made using katanas and what is the best environment for a Katana? **Japan**. So, this is our new environment:
 ![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Fruit%20Ninja%20-%20Environment.PNG)
 Then instead of fruits magically appearing in front of the user, like they did before we would make a "samurai-sensei" to throw them at him.
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Fruit%20Ninja%20-%20Samurai.PNG)
+This samurai would also have a table of fruits beside him so that he seems a lot more blend in the environment.
 
 
 
