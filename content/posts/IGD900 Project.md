@@ -91,6 +91,9 @@ First, we added awesome particle effects to the fruits like a splatter effect ac
 ![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Fruit%20Ninja%20-%20Watermelon%20Particle%20Effects.PNG)
 Then instead of just spawning particles, the Oculus controllers would vibrate on a successful fruit cut to improve the haptic feedback.
 In order to make the fruit cutting even more enganging we added a crowd. This crowd would be composed of Geishas that would cheer the user on a successful cut, each geisha is also a humanoid and it's animations are taken in a simular way from the Mixamo website.
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Fruit%20Ninja%20-%20Geishas.PNG)
+The last thing that would make the user even more enganged with our game was to add a combo counter. The combo meter would increase each time the user makes a successful cut on a fruit and return to 0 if he/she fails to cut one.
+
 
 
 
