@@ -84,6 +84,11 @@ This samurai would also have a table of fruits beside him so that he seems a lot
 ![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Fruit%20Ninja%20-%20Samurai%20%2B%20Table%20of%20fruits.PNG)
 The fruit that the samurai is throwing is random. I need to point out also that the samurai is a humanoid and is animated so that it feels more game-like to the player.
 The animation of the samurai is done using the Unity's **Animator** component and all the animations were taken from the **Mixamo** website, which has a lot of free humanoid animations.
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Fruit%20Ninja%20-%20Samurai%20Animation%20Tree.PNG)
+The tree is very simple to follow, a greeting animation will play when the user gets into the game and then when a fruit is thrown (when the pc player clicks on a spot) then the throwing animation will play.
+After adding a simple narrative we then proceeded to make the fruit slicing as much as enticing as possible so that the user would chase relentlessly to cut one.
+First, we added awesome particle effects to the fruits like a splatter effect according to which fruit the user is slicing (for example if it is a watermelon red, a lime green but a banana doesn't have any juice). The screenshot below shows how it is in a watermelon.
+
 
 
 
