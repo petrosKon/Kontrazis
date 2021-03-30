@@ -57,4 +57,12 @@ When a player enter the application then he/she automatically joins a room that 
 ```
 We get the position and location directly from Unity's Input system and we stream that data to the player in the monitor. We need both the position and rotation so that we know where our VR player is at any given time.
 Instead of just creating and implementing the multiplayer functionality, we also changed our scene, so that it seems more realistic to our player.
+The result of previously mentioned application is shown below:
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Catch-A-Bottle.PNG)
+The new is clearly a bar and not an empty space. Instead of the user catching I would throw the to the user bottles so it doesn't feel mundane. Last but not least, the wooden sticks you are seeing is the guardian that we are drawing using the code we described above.
+But with thorough testing we realised something, that the "catching" movement was not enough to make the player try to get out of the boundary and we needed a new mechanism.
+So instead of catching I introduced slicing. The game then would feel very similar to the popular game **Fruit Ninja VR** and a lot more functionality would be added.
+
+
+
 
