@@ -62,7 +62,20 @@ The result of previously mentioned application is shown below:
 The new is clearly a bar and not an empty space. Instead of the user catching I would throw the to the user bottles so it doesn't feel mundane. Last but not least, the wooden sticks you are seeing is the guardian that we are drawing using the code we described above.
 But with thorough testing we realised something, that the "catching" movement was not enough to make the player try to get out of the boundary and we needed a new mechanism.
 So instead of catching I introduced slicing. The game then would feel very similar to the popular game **Fruit Ninja VR** and a lot more functionality would be added.
+Before diving into the new implementation, I need to add more things about the sychronization of the game. The main idea is that where the user in pc clicks a projectile would be fired following a curve. This is accomplished by using this script:
+```C#
+  LaunchData CalculateLaunchData()
+    {
+        float displacementY = target.y - this.transform.position.y;
+        Vector3 displacementXZ = new Vector3(target.x - this.transform.position.x, 0, target.z - this.transform.position.z);
+        float flightTime = Mathf.Sqrt(-2 * trajectoryHeight / gravity) + Mathf.Sqrt(2 * (displacementY - trajectoryHeight) / gravity);
+        Vector3 velocityY = Vector3.up * Mathf.Sqrt(-2 * gravity * trajectoryHeight);
+        Vector3 velocityXZ = displacementXZ / flightTime;
 
-
+        return new LaunchData(velocityXZ + velocityY * -Mathf.Sign(gravity), flightTime);
+    }
+```
+Now we will talk about our new scene, the fruit slicing one. We found out during experimentation that the more present the user is in the application, more are the chances that he/she will collide with the guardians, then we proceeded to add couple of things.
+First of all, we changed the scenery. The slicing is made using katanas and what is the best environment for a Katana? **Japan**. So, this is our new environment:
 
 
