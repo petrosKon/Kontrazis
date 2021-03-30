@@ -81,6 +81,9 @@ First of all, we changed the scenery. The slicing in our game is made using kata
 Then instead of fruits magically appearing in front of the user, like they did before we would make a "samurai-sensei" to throw them at him.
 ![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Fruit%20Ninja%20-%20Samurai.PNG)
 This samurai would also have a table of fruits beside him so that he seems a lot more blend in the environment.
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Fruit%20Ninja%20-%20Samurai%20%2B%20Table%20of%20fruits.PNG)
+The fruit that the samurai is throwing is random. I need to point out also that the samurai is a humanoid and is animated so that it feels more game-like to the player.
+The animation of the samurai is done using the Unity's **Animator** component and all the animations were taken from the **Mixamo** website, which has a lot of free humanoid animations.
 
 
 
