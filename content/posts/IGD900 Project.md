@@ -76,6 +76,9 @@ Before diving into the new implementation, I need to add more things about the s
     }
 ```
 Now we will talk about our new scene, the fruit slicing one. We found out during experimentation that the more present the user is in the application, more are the chances that he/she will collide with the guardians, then we proceeded to add couple of things.
-First of all, we changed the scenery. The slicing is made using katanas and what is the best environment for a Katana? **Japan**. So, this is our new environment:
+First of all, we changed the scenery. The slicing in our game is made using katanas and what is the best environment for a Katana? **Japan**. So, this is our new environment:
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Fruit%20Ninja%20-%20Environment.PNG)
+Then instead of fruits magically appearing in front of the user, like they did before we would make a "samurai-sensei" to throw them at him.
+
 
 
