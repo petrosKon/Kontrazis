@@ -88,6 +88,10 @@ The animation of the samurai is done using the Unity's **Animator** component an
 The tree is very simple to follow, a greeting animation will play when the user gets into the game and then when a fruit is thrown (when the pc player clicks on a spot) then the throwing animation will play.
 After adding a simple narrative we then proceeded to make the fruit slicing as much as enticing as possible so that the user would chase relentlessly to cut one.
 First, we added awesome particle effects to the fruits like a splatter effect according to which fruit the user is slicing (for example if it is a watermelon red, a lime green but a banana doesn't have any juice). The screenshot below shows how it is in a watermelon.
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Fruit%20Ninja%20-%20Watermelon%20Particle%20Effects.PNG)
+Then instead of just spawning particles, the Oculus controllers would vibrate on a successful fruit cut to improve the haptic feedback.
+In order to make the fruit cutting even more enganging we added a crowd. This crowd would be composed of Geishas that would cheer the user on a successful cut, each geisha is also a humanoid and it's animations are taken in a simular way from the Mixamo website.
+
 
 
 
