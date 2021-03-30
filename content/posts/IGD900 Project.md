@@ -15,3 +15,32 @@ When I first started this application, it was a simple catch a ball game, where 
 It was developed and run in one machine, a pc or a laptop and the player in the laptop would see the user in VR and in real-life.
 ![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Catch-A-Ball%20Game%20Simple.PNG)
 The picture above shows the result. The green circle is the depiction of the user's stationary boundary. The red circle is the depiction of the edges of the stationary boundary. The green arrow shows where the user is currently looking and the transparent green circle is the cursor with which the user in pc throws a ball.
+We released then that this depiction of the guardian was not enough. Thus, we wanted to see the guardian that the player is drawing.
+The script that was able to do that, was the following:
+```C#
+  bool configuredBoundaries = OVRManager.boundary.GetConfigured();
+            if (configuredBoundaries)
+            {
+                //Get all boundary points
+                boundaryPoints = OVRManager.boundary.GetGeometry(BoundaryType.OuterBoundary);
+
+		 //render points with walls boundaries
+                for (int i = 0; i < boundaryPoints.Length; i++)
+                {
+                    #region Wall Boundaries
+                    if (i % distanceBetweenWalls == 0)
+                    {
+                        Vector3 positionBetweenBoundariesAndPlayer = new Vector3(boundaryPoints[i].x + spawnedVRPlayer.transform.position.x, 1f, boundaryPoints[i].z + spawnedVRPlayer.transform.position.z);
+                        boundaryPoints[i] = positionBetweenBoundariesAndPlayer;
+                        GameObject wallObject = PhotonNetwork.Instantiate("Wall Object", boundaryPoints[i], Quaternion.identity) as GameObject;
+                        wallObject.transform.parent = guardianMapper.transform;
+
+                        yield return null;
+
+                    }
+                    #endregion
+                }
+```
+What this snip of code basically does is get all the points of the guardian that Oculus gives us. But we realise that this code didn't worked when the Oculus Quest Link was enabled, so we needed to find another way to create our experience. 
+So, in order to solve that problem, I designed a multiplayer game. One player would be able to player from PC and control as previously said the balls that was throwing to our player and the other player would playr from VR.
+This multiplayer experience was created using **Photon**, a framework that makes the development of multiplayer experiences real fast.
