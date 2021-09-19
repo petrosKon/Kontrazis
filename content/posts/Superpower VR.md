@@ -1,11 +1,12 @@
 ---
-title: "Lab Homework 5: Superpower VR"
+title: "Superpower VR"
 date: 2021-02-23T21:53:14+01:00
-featured_image: "/static/images/Superman - Flying.png"
+featured_image: "/images/Superman - VR.jpg"
 draft: false
 ---
 
-To be honest the idea of the gesture recognition came to me when I first saw this video: https://www.youtube.com/watch?v=lBzwUKQ3tbw
+To be honest the idea of the gesture recognition came to me when I first saw this video:
+{{< youtube lBzwUKQ3tbw >}} 
 
 So I wanted to create something around it, as well as experiment with it. The code I used in most of my project was from this tutorial, but I needed to deep dive into it and understand it, in order to create the **Superman VR**.
 Now, first let's deep dive into the code of this video.
@@ -190,4 +191,4 @@ When the player stops then, we just set the value of the starting speed to 1.
 ```
 This is all the code as well as logic for our locomotion technique, also we can see a final implementation in this video:
 
-https://www.dropbox.com/s/kqynksk9aepcyvg/2%20-%20Evaluation%20of%20Locomotion%20Technique.mp4?dl=0
+{{< youtube kOAVx5cbF8Q >}}
