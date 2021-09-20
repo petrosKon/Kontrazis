@@ -31,3 +31,5 @@ public enum Status
 ```
 Each status determine how the user is able to interact with that specific part. For example when the part is **Connectable**, it means that this part can now connect to another part. Then we need to define which part connects to another part. This is done with an **Enumerator** we call **Type**. 
 This enumerator adds a property to our part, that is going to be used by other parts. In each part we utilize a script called **EnginePart**. This script determines what this part is and as well as creates the relation between this part and other parts.
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Engine%20Part%20Script.JPG)
+We need to determine all the relations each part has with other objects, because this determines its status. For example let's say we have 4 parts that are connected together, like we see in the picture, the red tube that is located in the side of our engine.
