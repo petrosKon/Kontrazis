@@ -43,6 +43,6 @@ We then move to the next part, creating dynamic relations. As we mentioned earli
 Then the "Part Type" automatically fills the fields: **Types That Connects to** and **Type**. The next field we are filling is **Part Starting Position** in order to know where every part is located. The **Status** field is the only one that is determined while using the application and not on the start of it.
 We then determine all the other fields, because it will help us check anytime if our part is able to connect or not. If a part is **Connectable** then the user will be able to grab it and put it into place. We have to note that since some parts can fit into multiple positions. For example a screw, a screw with certain dimensions can 
 fit into many different holes, so some parts do not have a unique position. So we also need to determine **all possible** positions each part can connect.
-
+![alt text]()
 
 
