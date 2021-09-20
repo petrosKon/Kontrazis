@@ -43,6 +43,10 @@ We then move to the next part, creating dynamic relations. As we mentioned earli
 Then the "Part Type" automatically fills the fields: **Types That Connects to** and **Type**. The next field we are filling is **Part Starting Position** in order to know where every part is located. The **Status** field is the only one that is determined while using the application and not on the start of it.
 We then determine all the other fields, because it will help us check anytime if our part is able to connect or not. If a part is **Connectable** then the user will be able to grab it and put it into place. We have to note that since some parts can fit into multiple positions. For example a screw, a screw with certain dimensions can 
 fit into many different holes, so some parts do not have a unique position. So we also need to determine **all possible** positions each part can connect.
-![alt text]()
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Red%20tubes%20-%20Screws.jpg)
+After we determine all possible positions, we need to also specify what they are restricting when they are placed in that position and also what they are resctricted by. When we finally we determine that, our relationships are figured out and as result we are able to create them dynamically.
+All this procedure is done at the beggining of the application and the result can be seen in the next video, where more than 40 engine parts are removed and then added again.
+{{< youtube qYI8fDcJ6cE >}}
+
 
 
