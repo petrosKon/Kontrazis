@@ -33,3 +33,16 @@ Each status determine how the user is able to interact with that specific part. 
 This enumerator adds a property to our part, that is going to be used by other parts. In each part we utilize a script called **EnginePart**. This script determines what this part is and as well as creates the relation between this part and other parts.
 ![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Engine%20Part%20Script.JPG)
 We need to determine all the relations each part has with other objects, because this determines its status. For example let's say we have 4 parts that are connected together, like we see in the picture, the red tube that is located in the side of our engine.
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Red%20tubes%20-%20Numbered.png)
+In order to remove the red pipe, we need first to remove the bolt along with the part type that holds the pipe. When the bolt is removed (numbered as 1), we can proceed to remove the part type that holds the pipe (numbered as 2) and following the same procedure, we remove all the parts and release that part from our engine.
+This is the logic behing the disassembly, pretty easy to follow and it is the first thing I did in that project. I then needed a way to put them back, in case need for an assembly. This is where the "Snap Zone" comes into play.
+The "Snap Zone" is very valuable to us, since with that we are able to put the part at its starting position. So we store its position at the beggining, in order to know where the part is going to be assembled to.
+With this information we can start assemblying and disassemblying. At this first video, I created a simple assembly and disassembly procedure.
+{{< youtube QtnwzajPdSU >}}
+We then move to the next part, creating dynamic relations. As we mentioned earlier the engine part holds all the information we need and now I am going to explain each field. In order to determine the part, we add a scriptable object called "Part type" which basically determines what this part is and with which parts it connects to.
+Then the "Part Type" automatically fills the fields: **Types That Connects to** and **Type**. The next field we are filling is **Part Starting Position** in order to know where every part is located. The **Status** field is the only one that is determined while using the application and not on the start of it.
+We then determine all the other fields, because it will help us check anytime if our part is able to connect or not. If a part is **Connectable** then the user will be able to grab it and put it into place. We have to note that since some parts can fit into multiple positions. For example a screw, a screw with certain dimensions can 
+fit into many different holes, so some parts do not have a unique position. So we also need to determine **all possible** positions each part can connect.
+
+
+
