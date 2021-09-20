@@ -16,3 +16,18 @@ The **VRTK** plugin is one of the most popular plugins for VR since it has many 
 that we are using is teleportation. It is easy to integrate, since it is one of the most common in VR. The user is able to teleport using the right analog stick, select where he/she is going to land and according to how much he/she is rotating the 
 stick, it determines how the user looks. The locomotion technique is similar to most techniques used in VR games, in order to avoid motion sickness.
 In order for our teleportation to be effective, we added certain "targets" at the edges of our table. These targets serve as "cliping points" where the player is able to snap and teleport to.
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Teleport%20Targets.JPG)
+These targets will allow the user to position him/herself in certain parts of the engine in order to be able to assemble and dissasemble it easier.
+Now we are to start explaining our project. First, we are going to talk about the logic behind our application. We need our application to be as dynamic as possible, meaning that when given a new 3d model of engine dynamic relations between its parts will be created.
+In order to do that we follow a certain logic. The first thing we do is we specify the properties of our parts. Each part has 4 states, which we call as status:
+```C#
+public enum Status
+        {
+            Connectable,
+            Disconnectable,
+            Grabbable,
+            Ungrabbable
+        }
+```
+Each status determine how the user is able to interact with that specific part. For example when the part is **Connectable**, it means that this part can now connect to another part. Then we need to define which part connects to another part. This is done with an **Enumerator** we call **Type**. 
+This enumerator adds a property to our part, that is going to be used by other parts. In each part we utilize a script called **EnginePart**. This script determines what this part is and as well as creates the relation between this part and other parts.
