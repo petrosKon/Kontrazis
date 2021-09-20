@@ -9,3 +9,5 @@ The main idea behind this project is the value that VR applications can offer fo
 In our case we only use VR. The training scenario that we want the user to be accustomed to is the assembly and disassembly of an engine. For our example we are using this type of engine that is used mostly on
 ships.
 ![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/VR%20Engine.JPG)
+As I said in this scenario we need to train our user into the assembly and the disassembly of the engine. In order to create something like that we use something called a "Snap Zone". This "Snap Zone" functions 
+as an area that indicates where a certain part fit or not. In order to integrate that to our application we used the **VRTK** plugin since it comes with many predefined objects especially concerning VR.
