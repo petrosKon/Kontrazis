@@ -11,3 +11,8 @@ ships.
 ![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/VR%20Engine.JPG)
 As I said in this scenario we need to train our user into the assembly and the disassembly of the engine. In order to create something like that we use something called a "Snap Zone". This "Snap Zone" functions 
 as an area that indicates where a certain part fit or not. In order to integrate that to our application we used the **VRTK** plugin since it comes with many predefined objects especially concerning VR.
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/VRTK%20Plugin.jpg)
+The **VRTK** plugin is one of the most popular plugins for VR since it has many commonly used functionalities. In our project we use for the "Snap Zone" and as well as for the locomotion. In this VR project the locomotion technique
+that we are using is teleportation. It is easy to integrate, since it is one of the most common in VR. The user is able to teleport using the right analog stick, select where he/she is going to land and according to how much he/she is rotating the 
+stick, it determines how the user looks. The locomotion technique is similar to most techniques used in VR games, in order to avoid motion sickness.
+In order for our teleportation to be effective, we added certain "targets" at the edges of our table. These targets serve as "cliping points" where the player is able to snap and teleport to.
