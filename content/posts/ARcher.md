@@ -10,6 +10,8 @@ Each card would serve as a platform with a level attached to it. When I was crea
 ![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/ARCher%20-%20Cards.JPG)
 
 Each of these cards contained a different platform with different kind of interactions. First, I am going to start with the **Ace of Spades**.
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/ARCher%20-%20Ace%20Of%20Spades.JPG)
+
 In this card we summon the first stage and our hero, the ARcher. The hero starts without anything but
 when he picks the arrow that is close to him, he will then gain a crossbow. Apart from the crossbow,
 another button appears on the screen, this button when triggered, enables the player to shoot in the
@@ -17,6 +19,26 @@ direction that he is facing to. In the first level there are three things (two a
 the spikes and the platform and a star pick up (not visible due to being VFX and have to be selected).
 When the player touches the spikes he dies and after 2 seconds he will be respawned. To where he
 respawns is dependent on which checkpoint he last touched. The checkpoints are the platforms where
-we see our player standing in the above screenshot.
+we see our player standing in the above screenshot. 
+The way the player moves is what makes it possible to play this game and these kinds of AR-Games. Because it is a combination of physical and non-physical movement. We need this kind of movement because when we are developing in AR and we are using physics based movement,
+even a slight glitch could cause the player to be thrown away. So in order to check when or not to enable or disable physics, we fire a raycast from the bottom of our player. If it detects ground, then we are disable gravity in order to move. When the raycast is not detecting anything, it means that 
+our player is in the air and thus we have to enable gravity so that it creates a realism that our player falls. The code snippet that does that is the following:
+```C#
+ if(!Physics.Raycast(transform.position, Vector3.down, Mathf.Infinity))
+        {
+            heroRigidbody.constraints = RigidbodyConstraints.None;
+            heroRigidbody.useGravity = true;
+            heroRigidbody.isKinematic = false;
+        }
+        else
+        {
+            heroRigidbody.constraints = RigidbodyConstraints.FreezePositionY;
+            heroRigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+
+            heroRigidbody.useGravity = false;
+            heroRigidbody.isKinematic = true;
+        }
+```
+I have to point also that our hero and the enemies are prefabs that are animated and they are not just moving around the scene like static objects. They have a complex animator components and trees that are shown in the next picture:
 
 
