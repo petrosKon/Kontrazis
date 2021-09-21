@@ -1,6 +1,7 @@
 ---
 title: "ARcher"
 date: 2021-09-21T14:06:18+03:00
+featured_image: "/images/ARCher - Ace Of Spades.jpg"
 draft: false
 ---
 
@@ -42,10 +43,51 @@ our player is in the air and thus we have to enable gravity so that it creates a
 I have to point also that our hero and the enemies are prefabs that are animated and they are not just moving around the scene like static objects. They have a complex animator components and trees that are shown in the next picture:
 ![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/ARCher%20-%20Animation%20Tree.JPG)
 The next card that I implemented is the **Two of Spades**.
-
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/ARCher%20-%20Two%20Of%20Spades.JPG)
 The second card of our game we introduce the first enemy variation, the frightfly. These flies move
 way too fast and it is very difficult to bypass without shooting them first. Shooting them also is no easy
 task. In order to pass this level, the player must avoid or kill the fireflies and as well as evade the spikes.
+The fireflies move arround two constant points where we set in our inspector and their controller is:
 
+```C#
+float lerpPercentage = Mathf.PingPong(Time.time, repeatTime) / repeatTime;
+
+            transform.position = Vector3.Lerp(startingPosition.position, finalPosition.position, lerpPercentage);
+            if (Vector3.Distance(transform.position, startingPosition.position) < 0.1f)
+            {
+                flyAnimator.SetBool("Fly forward", true);
+                transform.LookAt(finalPosition);
+
+            }
+            else if (Vector3.Distance(transform.position, finalPosition.position) < 0.1f)
+            {
+                transform.LookAt(startingPosition);
+
+            }
+```
+The next card is the **Eight of Spades**.
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/ARCher%20-%20Eight%20Of%20Spades.JPG)
+This level is a little more tricky than the others. It is almost impossible for the player to pass without
+shooting the piranha plants. These plants are able to detect the player when in close proximity and
+they quickly kill him. The piranha plants check the proximity of the player and they attack him when it gets close to them.
+```C#
+ if (!isDead && timeBeforeBites < 0f)
+        {
+            if (Vector3.Distance(transform.position, player.transform.position) <= lookRadius)
+            {
+                transform.LookAt(player.transform);
+                piranhaPlantAnimator.SetTrigger("Bite Attack");
+            }
+
+        }
+        else if (!isDead && timeBeforeBites > 0f)
+        {
+            timeBeforeBites -= Time.deltaTime;
+        }
+```
+My last card is the **Five of Hearts**.
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/ARCher%20-%20Five%20Hearts.JPG)
+Our last card for our demo, the Five Of Hearts. It includes our last enemy, the peashooter where it
+functions like a turret gun. According to which direction it is facing it is shooting projectiles.
 
 
