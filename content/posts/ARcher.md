@@ -40,5 +40,12 @@ our player is in the air and thus we have to enable gravity so that it creates a
         }
 ```
 I have to point also that our hero and the enemies are prefabs that are animated and they are not just moving around the scene like static objects. They have a complex animator components and trees that are shown in the next picture:
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/ARCher%20-%20Animation%20Tree.JPG)
+The next card that I implemented is the **Two of Spades**.
+
+The second card of our game we introduce the first enemy variation, the frightfly. These flies move
+way too fast and it is very difficult to bypass without shooting them first. Shooting them also is no easy
+task. In order to pass this level, the player must avoid or kill the fireflies and as well as evade the spikes.
+
 
 
