@@ -1,7 +1,7 @@
 ---
 title: "ARcher"
 date: 2021-09-21T14:06:18+03:00
-featured_image: "/images/ARCher - Ace Of Spades.jpg"
+featured_image: "/images/ARcher - Project Image.jpg"
 draft: false
 ---
 
