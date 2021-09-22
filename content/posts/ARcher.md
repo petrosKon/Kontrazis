@@ -89,5 +89,9 @@ My last card is the **Five of Hearts**.
 ![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/ARCher%20-%20Five%20Hearts.JPG)
 Our last card for our demo, the Five Of Hearts. It includes our last enemy, the peashooter where it
 functions like a turret gun. According to which direction it is facing it is shooting projectiles.
+Videos of the project:
+{{< youtube EQx3Q7t3PC8 >}}
+
+{{< youtube 2uzIrKo4wMw >}}
 
 
