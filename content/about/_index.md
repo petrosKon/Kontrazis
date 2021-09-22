@@ -16,6 +16,8 @@ that is able to capture the player's hand movement and display it in VR. My main
 ![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/About%20-%20Magos%20Image.jpg)
 This work experience made me undestand how much I am passionate about development, so I wanted to specialized on that. In order to do that I went to Paris for a year and obtained
 a Masters' in **Interaction, Graphics and Design**, from the most prestigious France University **IP Paris**.
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/About%20-%20IP%20Paris.jpg)
+During my time there, I also conducted my thesis, which was a complete innovative project combining different AR and VR devices! This is my story so far, feel free to contact me!
 
 
 
