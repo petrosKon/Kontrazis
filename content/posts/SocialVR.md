@@ -1,7 +1,7 @@
 ---
 title: "SocialVR"
 date: 2021-09-22T10:28:02+03:00
-draft: true
+draft: false
 ---
 This project started by thinking about the value of sharing
 an experience. One can capture a proof of a spatial existence or a temporal state or a way to express their social
@@ -29,3 +29,29 @@ used. The player contains a head and also two controllers
 are shown. The left one is the controller that he/she can
 interact with and the right one contains the two displays,
 one for the in-game feed and the web camera feed.
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/SocialVR%20-%20In-game%20and%20Camera%20feed.JPG)
+When the user takes a photo we need to find a way to display it. I use cannons to throw the photos in front of the
+player. These cannons follow the player, always face his
+direction and they are placed in a circular diameter.When
+a photo is taken, then they fire their photos to appear in
+front of him/her. The main theme in our scene is giants
+and they are scattered throughout the area. Our application contains three main scenes that the user can interact
+with, I will explain them going from the simplest one to
+the most complex one. The first scene is called the Lava
+Giant. There is a lava area that contains a Lava giant, although he may seem dangerous he is only carefully watching the user as he/she passes by. There is no interaction
+with this scene, just the giant is moving his body the way
+in the direction that the user walks. In the second scene,
+magic happens, literally. The second area of our game is
+the complete opposite of a lava area, it is a snowy area.
+In this area, there is a skull that has flaming eyes. When
+the user touches the skull with the left controller then a
+series of particle effects start to appear. After they finish
+a second skull giant appears and he is constantly casting
+a magic spell.
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/SocialVR%20-%20Giant%20casting%20spell.JPG)
+The last scene is staged in an oasis. When the user sees
+the oasis he/she can make out two things: A sword with
+energy that is drawn in it and two giants facing each other.
+One of them is an earth golem or the protector of the oasis
+and the other one is a demon.
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/SocialVR%20-%20Two%20gians%20classing.JPG)
