@@ -1,5 +1,5 @@
 ---
-title: "Fruit Slicer"
+title: "Fruit Slicer VR"
 date: 2021-03-29T21:53:14+01:00
 featured_image: "/images/Fruit Ninja - VR.jpg"
 draft: false
