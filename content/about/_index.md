@@ -13,6 +13,9 @@ I worked both as an Android and Unity developer. There I developed two projects,
 ![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/About%20-%20Comic%20Image.jpg)
 Due to my passion for programming, I started a second job as a Unity developer at **Magos**, a company that builds a custom haptic glove,
 that is able to capture the player's hand movement and display it in VR. My main task was to make an **API** and a interface that enable data flow from the haptic glove into Unity.
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/About%20-%20Magos%20Image.jpg)
+This work experience made me undestand how much I am passionate about development, so I wanted to specialized on that. In order to do that I went to Paris for a year and obtained
+a Masters' in **Interaction, Graphics and Design**, from the most prestigious France University **IP Paris**.
 
 
 
