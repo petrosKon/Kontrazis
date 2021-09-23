@@ -2,6 +2,7 @@
 title: "SocialVR"
 date: 2021-06-22T10:28:02+03:00
 featured_image: "/images/SocialVR - Project Image.jpg"
+tags: ["VR"]
 draft: false
 ---
 Motivation

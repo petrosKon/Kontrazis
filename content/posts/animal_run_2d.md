@@ -2,6 +2,7 @@
 title: "Animal Run 2D"
 date: 2020-07-20T11:13:36+03:00
 featured_image: "/images/Animal Run/Animal Run - Project Image.jpg"
+tags: ["Unity"]
 draft: false
 ---
 Motivation
