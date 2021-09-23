@@ -2,7 +2,7 @@
 title: "Animal_run_2d"
 date: 2020-07-20T11:13:36+03:00
 featured_image: "/images/Animal Run/Animal Run - Project Image.jpg"
-draft: true
+draft: false
 ---
 Motivation
 ===============
@@ -97,4 +97,7 @@ we are using **object pooling**, to reduce the number of objects in the scene an
 ```
 
 Now we are going to talk about our pick-ups. There are many types of pick-ups. Most of them are different fruits that give you points according to their rarity and two power-ups. The first one being double point score and the second one invicibility for a short period of time.
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Animal%20Run/Animal%20Run%20-%2001%20-%20Pick-ups.JPG)
+The next thing we are to describe is our enemies. There are 4 types of enemies. A cactus, spikes, a woodtrap and a Bird. Each of them are static enemies and they appear at the platform.
+We have also to make sure that since the enemies have a certain length that they are not placed in platforms that they are smaller of them and as a result kill the player.
 
