@@ -8,7 +8,7 @@ Motivation
 ===============
 
 After creating many VR projects, I thought it was a good idea to move to AR, since it also fascinated me. My first idea for an AR project came from my favourite game the **Binding of Isaac** and especially platform games such as **Mario** since I am a big fan of them.
-The main concept behind this project was to create a non linear platform game. For main components I used the cards from a deck.
+The main concept behind this project was to create a non linear platform game. The main components I used are the cards from a deck.
 Each card would serve as a platform with a level attached to it. When I was creating this project I utilized 4 cards: : 1) Ace of Spades 2) Two of Spades 3) Eight of Spades 4) Five of Hearts.
 ![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/ARCher%20-%20Cards.JPG)
 
@@ -21,17 +21,17 @@ Ace of Spades
 ---------------
 
 ![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/ARCher%20-%20Ace%20Of%20Spades.JPG)
-In this card we summon the first stage and our hero, the ARcher. The hero starts without anything but
+In this card we summon the first stage and our hero, the **ARcher**. The hero starts without anything but
 when he picks the arrow that is close to him, he will then gain a crossbow. Apart from the crossbow,
 another button appears on the screen, this button when triggered, enables the player to shoot in the
-direction that he is facing to. In the first level there are three things (two appear in this screenshot),
-the spikes and the platform and a star pick up (not visible due to being VFX and have to be selected).
-When the player touches the spikes he dies and after 2 seconds he will be respawned. To where he
+direction that he is facing to. In the first level there are three components that are visible (while two appear of them appear in this screenshot),
+spikes, a platform and a star pick-up (not visible due to being VFX and have to be selected).
+When the player touches the spikes he dies and after 2 seconds he will be respawned. Where he
 respawns is dependent on which checkpoint he last touched. The checkpoints are the platforms where
 we see our player standing in the above screenshot. 
-The way the player moves is what makes it possible to play this game and these kinds of AR-Games. Because it is a combination of physical and non-physical movement. We need this kind of movement because when we are developing in AR and we are using physics based movement,
-even a slight glitch could cause the player to be thrown away. So in order to check when or not to enable or disable physics, we fire a raycast from the bottom of our player. If it detects ground, then we are disable gravity in order to move. When the raycast is not detecting anything, it means that 
-our player is in the air and thus we have to enable gravity so that it creates a realism that our player falls. The code snippet that does that is the following:
+The way the player moves is what makes it possible to play this game and these kinds of AR-Games. Because it is a combination of physics and non-physics based movement. This kind of movement is used in AR applications because relying solely on physics based movement, can cause problems in gameplay.
+Even a slight glitch could cause the player to be thrown away. In order to check when or not to enable physics, we fire a raycast from the bottom of our player to some length beneath him. If this raycast detects ground, then we disable the gravity and rely on kinematic movement. When the raycast is not detecting anything, it means that 
+our player is floating in mid-air and thus we have to enable gravity so that it creates realism that our player falls. The code snippet that does that trigger this behavior is the following:
 ```C#
  if(!Physics.Raycast(transform.position, Vector3.down, Mathf.Infinity))
         {
@@ -55,10 +55,10 @@ Two of Spades
 ---------------
 
 ![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/ARCher%20-%20Two%20Of%20Spades.JPG)
-The second card of our game we introduce the first enemy variation, the frightfly. These flies move
+This is the second card of our game we introduce the first enemy variation, the frightfly. These flies move
 way too fast and it is very difficult to bypass without shooting them first. Shooting them also is no easy
 task. In order to pass this level, the player must avoid or kill the fireflies and as well as evade the spikes.
-The fireflies move arround two constant points where we set in our inspector and their controller is:
+The fireflies move arround two constant points where we set them in our inspector and their controller is:
 
 ```C#
 float lerpPercentage = Mathf.PingPong(Time.time, repeatTime) / repeatTime;
@@ -83,7 +83,7 @@ Eight of Spades
 ![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/ARCher%20-%20Eight%20Of%20Spades.JPG)
 This level is a little more tricky than the others. It is almost impossible for the player to pass without
 shooting the piranha plants. These plants are able to detect the player when in close proximity and
-they quickly kill him. The piranha plants check the proximity of the player and they attack him when it gets close to them.
+they quickly kill him. The piranha plants continuously check the proximity of the player and they attack him when it gets close to them.
 ```C#
  if (!isDead && timeBeforeBites < 0f)
         {
@@ -105,7 +105,7 @@ Five of Hearts
 
 ![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/ARCher%20-%20Five%20Hearts.JPG)
 Our last card for our demo, the Five Of Hearts. It includes our last enemy, the peashooter where it
-functions like a turret gun. According to which direction it is facing it is shooting projectiles.
+functions like a turret gun. According to which direction it is facing it is shooting projectiles. The videos of the application contain two different configuration that can show the possibilities of such an application, that multiple large scale levels can be created even with the same cards!!
 
 Videos of the application:
 ---------------
