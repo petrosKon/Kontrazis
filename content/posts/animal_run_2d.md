@@ -100,4 +100,7 @@ Now we are going to talk about our pick-ups. There are many types of pick-ups. M
 ![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Animal%20Run/Animal%20Run%20-%2001%20-%20Pick-ups.JPG)
 The next thing we are to describe is our enemies. There are 4 types of enemies. A cactus, spikes, a woodtrap and a Bird. Each of them are static enemies and they appear at the platform.
 We have also to make sure that since the enemies have a certain length that they are not placed in platforms that they are smaller of them and as a result kill the player.
-
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Animal%20Run/Animal%20Run%20-%2002%20-%20Enemies.JPG)
+We have to point out that the bird enemy is animated and we are using an animator component.
+In this game the player can choose between 4 characters, a cat, a corgi, a dog and a rabbit. Each one of them are animated and they also have an 
+animator component.
