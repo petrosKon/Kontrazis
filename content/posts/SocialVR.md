@@ -25,7 +25,7 @@ be a way to transfer this mechanism to the virtual world.
 By the immersive properties of VR, I can say that the
 user is actually transported in space-and-probably time
 and is living new experiences that are comparable to travelling and sightseeing and are at their core sharable to
-everyone (VR-accustomed or not).
+everyone (VR-accustomed or not). This project was created with another two developer in context of creating something new in VR in order to contribute to a paper.
 
 Describing the player and the scene
 ===============
