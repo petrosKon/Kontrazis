@@ -55,5 +55,18 @@ Later we also made sure that the user can only change the name of one group at a
 Final Version
 ===============
 
+Our idea from the start was to have the user stand on an island, with the Post-Its in front of them, and the overview of created groups next to them.
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Post%20it%20images/Stabbing%20Post-its%20-%2013.jpg)
+We have also added some trees, stones, and animated grass to make the environment more alive.
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Post%20it%20images/Stabbing%20Post-its%20-%2014.png)
+The user has all the important elements, the sword spawner, the post-its, and the displays for the groups right next to them. This can be seen as a precaution to take into account that users might not have much space to walk around. It also makes looking at the unsorted Post-Its and at the groups easier. 
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Post%20it%20images/Stabbing%20Post-its%20-%2015.png)
 
+Conclusion & Future work
+===============
+
+
+To conclude we must say that we successfully implemented everything that was on our list, we managed to transfer our ideas to sketches and to fully develop them in the virtual environment. Our implementation is still not perfect, some problems were not solved during our development.
+The first thing is that there is no distinct way for the user to know, where the sword will go after letting it and sometimes it can cause confusion, because it may seem lost. Another thing is the speech recognition. The API that we are using is causing the main game to freeze for a little while and it can be annoying.
+Apart from the problems, new features could be added so that they can make this application much more appealing. First of all, multiplayer functionality, where two or more users can collaborate in the same environment. Apart from that, we can see that our scene contains a discrete amount of post-its, it would be a helpful functionality if the user is able to create more or even change the color of them, so it can resemble as much as possible the way we do it in real life.
 
