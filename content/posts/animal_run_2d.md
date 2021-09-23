@@ -1,5 +1,5 @@
 ---
-title: "Animal_run_2d"
+title: "Animal Run 2D"
 date: 2020-07-20T11:13:36+03:00
 featured_image: "/images/Animal Run/Animal Run - Project Image.jpg"
 draft: false
@@ -104,3 +104,6 @@ We have also to make sure that since the enemies have a certain length that they
 We have to point out that the bird enemy is animated and we are using an animator component.
 In this game the player can choose between 4 characters, a cat, a corgi, a dog and a rabbit. Each one of them are animated and they also have an 
 animator component.
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Animal%20Run/Animal%20Run%20-%2003%20-%20Characters.JPG)
+The last thing we have to make sure in our environment is that is that the player is not getting bored. This is accomplished by changing different backgrounds as the player runs across the stage. These backgrounds are 
+again 4: Mountains, Forest, Volcano and Night.
