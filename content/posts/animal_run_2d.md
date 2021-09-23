@@ -107,3 +107,27 @@ animator component.
 ![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Animal%20Run/Animal%20Run%20-%2003%20-%20Characters.JPG)
 The last thing we have to make sure in our environment is that is that the player is not getting bored. This is accomplished by changing different backgrounds as the player runs across the stage. These backgrounds are 
 again 4: Mountains, Forest, Volcano and Night.
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Animal%20Run/Animal%20Run%20-%2004%20-%20Backgrounds.JPG)
+Now, in order for our game to fit in the social platform we need a way to store our scores into a leaderboard. This is done by using **dreamlo** as our leaderboard, which is able to host our scores.
+When the user ends a successful run he/she is able to upload their score. By the time I created that application I used the deprecated class of Unity of **WWW** in order to post my score into **dreamlo**
+
+```C#
+IEnumerator UploadNewHighscore(string username, int score)
+    {
+        WWW www = new WWW(webUrl + privateCode + "/add/" + WWW.EscapeURL(username) + "/" + score);
+        yield return www;
+
+        if (string.IsNullOrEmpty(www.error))
+        {
+            print("upload successful");
+            DownloadHighscores();
+        }
+        else
+        {
+            print("Error uploading: " + www.error);
+        }
+    }
+```
+
+After this part is finished, the next step was to set up the application in order to be complete. Meaning I created, a start menu:
+
