@@ -111,7 +111,7 @@ In the night the ninja would appear in front of the user and throw shurikens. Th
 ![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Fruit%20Ninja%20-%20Ninja.PNG)
 The ninja didn't fit our purpose because we wanted a more methodical approach of how the user will pass the boundaries. Instead of making random clicks, we pre-recorded a sequence of fruit throwing and play it on each participant.
 
-Video of the project and the result:
+Videos of the application:
 ---------------
 
 {{< youtube 0ph16W51JTA >}}

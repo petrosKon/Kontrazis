@@ -107,7 +107,7 @@ Five of Hearts
 Our last card for our demo, the Five Of Hearts. It includes our last enemy, the peashooter where it
 functions like a turret gun. According to which direction it is facing it is shooting projectiles.
 
-Videos:
+Videos of the application:
 ---------------
 
 {{< youtube EQx3Q7t3PC8 >}}

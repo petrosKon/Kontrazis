@@ -53,7 +53,7 @@ fit into many different holes, so some parts do not have a unique position. So w
 After we determine all possible positions, we need to also specify what they are restricting when they are placed in that position and also what they are resctricted by. When we finally we determine that, our relationships are figured out and as result we are able to create them dynamically.
 All this procedure is done at the beggining of the application and the result can be seen in the next video, where more than 40 engine parts are removed and then added again.
 
-Video of the final result:
+Video of the application:
 ---------------
 
 {{< youtube qYI8fDcJ6cE >}}

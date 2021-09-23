@@ -130,4 +130,17 @@ IEnumerator UploadNewHighscore(string username, int score)
 ```
 
 After this part is finished, the next step was to set up the application in order to be complete. Meaning I created, a start menu:
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Animal%20Run/Animal%20Run%20-%2005%20-%20Start%20Menu.JPG)
+A leaderboard menu:
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Animal%20Run/Animal%20Run%20-%2006%20-%20Leaderboard%20Menu.JPG)
+A character selection screen:
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Animal%20Run/Animal%20Run%20-%2007%20-%20Character%20selection%20screen.JPG)
+and last but not least, a pause menu:
+![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Animal%20Run/Animal%20Run%20-%2008%20-%20Pause%20Menu.JPG)
+The flow between these screens is logical and the user can traverse through them in any way.
 
+
+Video of the application:
+---------------
+
+{{< youtube GcGeCE7Blo4 >}}

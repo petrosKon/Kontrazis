@@ -197,7 +197,7 @@ When the player stops then, we just set the value of the starting speed to 1.
     }
 ```
 
-Video of the final result:
+Video of the application:
 ---------------
 
 {{< youtube kOAVx5cbF8Q >}}
