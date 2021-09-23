@@ -70,3 +70,7 @@ To conclude we must say that we successfully implemented everything that was on 
 The first thing is that there is no distinct way for the user to know, where the sword will go after letting it and sometimes it can cause confusion, because it may seem lost. Another thing is the speech recognition. The API that we are using is causing the main game to freeze for a little while and it can be annoying.
 Apart from the problems, new features could be added so that they can make this application much more appealing. First of all, multiplayer functionality, where two or more users can collaborate in the same environment. Apart from that, we can see that our scene contains a discrete amount of post-its, it would be a helpful functionality if the user is able to create more or even change the color of them, so it can resemble as much as possible the way we do it in real life.
 
+Video of the application:
+---------------
+
+{{<< youtube yf8Abz3wlqI >>}}
