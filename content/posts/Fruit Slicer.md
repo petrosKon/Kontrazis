@@ -4,6 +4,8 @@ date: 2021-03-29T21:53:14+01:00
 featured_image: "/images/Fruit Ninja - VR.jpg"
 draft: false
 ---
+Motivation
+===============
 
 Have you ever played VR and accidentally hit your hand over a wall? Break something in your house?
 As it turns out, you are not alone, it is not uncommon when using VR you may sometimes hit or break something. There is even a popular term on Youtube called **VR Fails** that yield way too many results and videos with a huge amount of views.
@@ -12,6 +14,10 @@ But this harm is for a good reason, we needed to point out parameters that would
 First of all, we discussed over different types of harm from physchological to physical harm and discussed different ideas for an application.
 I would have two ideas, a horror game made in VR and with the use of jump scares it could induce harm to the user or a way to inflict physical harm. I went with the latter.
 The whole application was developed purely in Unity and it was made for the Oculus Quest specifically.
+
+Implementation
+===============
+
 When I first started this application, it was a simple catch a ball game, where one user could throw balls to the player and the other would try to grab them.
 It was developed and run in one machine, a pc or a laptop and the player in the laptop would see the user in VR and in real-life.
 ![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Catch-A-Ball%20Game%20Simple.PNG)
@@ -76,6 +82,10 @@ Before diving into the new implementation, I need to add more things about the s
         return new LaunchData(velocityXZ + velocityY * -Mathf.Sign(gravity), flightTime);
     }
 ```
+
+Scene description
+===============
+
 Now we will talk about our new scene, the fruit slicing one. We found out during experimentation that the more present the user is in the application, more are the chances that he/she will collide with the guardians, then we proceeded to add couple of things.
 First of all, we changed the scenery. The slicing in our game is made using katanas and what is the best environment for a Katana? **Japan**. So, this is our new environment:
 ![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Fruit%20Ninja%20-%20Environment.PNG)
@@ -101,7 +111,9 @@ In the night the ninja would appear in front of the user and throw shurikens. Th
 ![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Fruit%20Ninja%20-%20Ninja.PNG)
 The ninja didn't fit our purpose because we wanted a more methodical approach of how the user will pass the boundaries. Instead of making random clicks, we pre-recorded a sequence of fruit throwing and play it on each participant.
 
-To conclude, the final implementation can be seen here: 
+Video of the project and the result:
+---------------
+
 {{< youtube 0ph16W51JTA >}}
 
 

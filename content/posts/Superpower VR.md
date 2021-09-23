@@ -5,11 +5,18 @@ featured_image: "/images/Superman - VR.jpg"
 draft: false
 ---
 
-To be honest the idea of the gesture recognition came to me when I first saw this video:
+Motivation
+===============
+
+The idea of the gesture recognition came to me when I first saw this video:
 {{< youtube lBzwUKQ3tbw >}} 
 
 So I wanted to create something around it, as well as experiment with it. The code I used in most of my project was from this tutorial, but I needed to deep dive into it and understand it, in order to create the **Superman VR**.
 Now, first let's deep dive into the code of this video.
+
+Implementation
+===============
+
 First of all, we create a list of **OVRBone** variables called **fingerbones**, this list contains all the bones of our hand. Our hand is referenced through the variable called **OVRSkeleton** and this is the field we are going to use in order to check for a gesture.
 Gesture recognition as presented in the video is a form of continously searching for gestures. Since the movement of the hand is continuous, we need to constantly check if a gesture is made and if the current position of the fingers correspond to a gesture.
 We create a **struct** called **Gesture** with the following fields:
@@ -189,6 +196,8 @@ When the player stops then, we just set the value of the starting speed to 1.
         startingSpeed = 1f;
     }
 ```
-This is all the code as well as logic for our locomotion technique, also we can see a final implementation in this video:
+
+Video of the final result:
+---------------
 
 {{< youtube kOAVx5cbF8Q >}}

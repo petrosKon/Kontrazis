@@ -4,11 +4,17 @@ date: 2021-09-20T08:42:22+03:00
 featured_image: "/images/VR Engine.jpg"
 draft: false
 ---
+Motivation
+===============
 
 The main idea behind this project is the value that VR applications can offer for training purposes. We imagine that in the future, VR in combination with AR will be used in order to create training scenarios.
 In our case we only use VR. The training scenario that we want the user to be accustomed to is the assembly and disassembly of an engine. For our example we are using this type of engine that is used mostly on
 ships.
 ![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/VR%20Engine.JPG)
+
+Implementation
+===============
+
 As I said in this scenario we need to train our user into the assembly and the disassembly of the engine. In order to create something like that we use something called a "Snap Zone". This "Snap Zone" functions 
 as an area that indicates where a certain part fit or not. In order to integrate that to our application we used the **VRTK** plugin since it comes with many predefined objects especially concerning VR.
 ![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/VRTK%20Plugin.jpg)
@@ -46,6 +52,10 @@ fit into many different holes, so some parts do not have a unique position. So w
 ![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/Red%20tubes%20-%20Screws.jpg)
 After we determine all possible positions, we need to also specify what they are restricting when they are placed in that position and also what they are resctricted by. When we finally we determine that, our relationships are figured out and as result we are able to create them dynamically.
 All this procedure is done at the beggining of the application and the result can be seen in the next video, where more than 40 engine parts are removed and then added again.
+
+Video of the final result:
+---------------
+
 {{< youtube qYI8fDcJ6cE >}}
 
 

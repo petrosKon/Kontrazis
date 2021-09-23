@@ -4,6 +4,9 @@ date: 2021-09-22T10:28:02+03:00
 featured_image: "/images/SocialVR - Project Image.jpg"
 draft: false
 ---
+Motivation
+===============
+
 This project started by thinking about the value of sharing
 an experience. One can capture a proof of a spatial existence or a temporal state or a way to express their social
 identities. One may ask then how will this be transferable to the virtual world where VR users can live similar
@@ -23,6 +26,10 @@ By the immersive properties of VR, I can say that the
 user is actually transported in space-and-probably time
 and is living new experiences that are comparable to travelling and sightseeing and are at their core sharable to
 everyone (VR-accustomed or not).
+
+Describing the player and the scene
+===============
+
 First of all, I am not using the regular OVRCameraRig
 but OVRPlayerController, this gives us the ability to move
 more freely in the scene, since the controller joystick can be
@@ -59,6 +66,10 @@ and the other one is a demon.
 We have to mention that all the models are humanoid
 rigged models and they carry an animator component.
 The main idea of the project is to merge two given selfies.
+
+Merging feature
+===============
+
 One taken in the game and one taken in real life. As for the
 result I chose to do this merging feature for both sides.
 Meaning I will have at the end two types of results. First
@@ -84,6 +95,9 @@ Now I am going to detail the full pipeline of my work
 and possible enhancements. I will also explain some key
 notions along the breakdown of the algorithm.
 
+Calibration of the camera
+===============
+
 Since the final images depend on real life images and on
 virtual elements, I need to have the two pictures taken
 in each world perfectly aligned, ie, each virtual element
@@ -97,6 +111,9 @@ FOV values from the webcam specs. This process can be
 perfected by using chessboard calibration and making it
 in a future version a dynamic calibration.
 ![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/SocialVR%20-%205%20-%20Camera%20mount.png)
+
+Extracting the elements in interest
+===============
 
 In this part, I am going to explain how I did extract
 the user in real life and in game. For that I used the
@@ -121,12 +138,18 @@ Right now I have the position of the head in pixels. Below, I showcase how I did
 in a simple figure:
 ![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/SocialVR%20-%206%20-%20Rectangle%20based%20calculations.png)
 
+Merging the two selfies
+===============
+
 Using this rectangle I apply grabcut on both selfies.
 That will give me two masks corresponding to the two silhouettes. Using these masks, I can cut the interesting
 part in one picture and paste it on top of the other in the
 same position (The alignment assumption is still valid).
 The figure below highlights this process:
 ![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/SocialVR%20-%207%20-%20How%20grabcut%20works.png)
+
+Optimization of GrabCut method
+===============
 
 After trying out this method, I noticed that the resulting
 masks are not as precise as I wanted. So I came up
@@ -148,6 +171,10 @@ part in one picture and paste it on top of the other in the
 same position (The alignment assumption is still valid).
 The figure below highlights this process:
 ![alt text](https://raw.githubusercontent.com/petrosKon/Kontrazis/master/static/images/SocialVR%20-%209%20-%20Final%20result.png)
+
+Results of this method
+===============
+
 As you can see the result is not that realistic. In order
 to make them more plausible, I thought about removing
 the already existing element before pasting the new one
@@ -158,10 +185,32 @@ or missing parts of an artwork are filled in to present a
 complete image”. The built-in function for inpainting
 requires an initial mask of the object to remove. So we
 could use the masks defined by the grabCut algorithm. 
-Also I included the three parts of the project in videos, showcasing how the application works:
+
+Conclusion
+===============
+
+I have described SelfieVR, a unity project where users
+can explore different scenes and share their ingame experience with mixed selfies with elements from both the virtual
+and the real worlds. The final prototype is an independent
+oculus app but the ideal version should be a Unity SDK
+that VR developers can import to their project to make
+every VR experience shareable in the form of fun selfies.
+SelfieVR can be used to capture a particular moment in
+the virtual world, an emotion or a scene. These selfies can
+then be shared on social media to engage other VR users
+but also non VR users. This aims ultimately at making
+the VR experience transcend its exotic nature and having everyone become accustomed to it in a way similar to
+real life experiences such as travelling and meeting other
+people.
+
+Videos of the application:
+---------------
+
 {{< youtube JUO25-ABRb8 >}}
 
+
 {{< youtube gQDo1ZfkxtY >}}
+
 
 {{< youtube WJch0EJFrHc >}}
 
