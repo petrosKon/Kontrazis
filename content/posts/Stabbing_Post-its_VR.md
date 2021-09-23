@@ -73,4 +73,4 @@ Apart from the problems, new features could be added so that they can make this 
 Video of the application:
 ---------------
 
-{{<< youtube yf8Abz3wlqI >>}}
+{{< youtube yf8Abz3wlqI >}}
