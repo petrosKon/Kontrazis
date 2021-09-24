@@ -1,7 +1,7 @@
 ---
 title: "VR Mechanic"
 date: 2021-05-20T08:42:22+03:00
-featured_image: "/images/VR Engine.jpg"
+featured_image: "/images/VR Engine - Resized.jpg"
 tags: ["VR"]
 draft: false
 ---
