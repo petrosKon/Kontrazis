@@ -20,6 +20,13 @@ Videos of the application:
 
 {{< youtube FSlsY4QWh_o >}}
 
+
 {{< youtube VfW_JmRxLDQ >}}
 
+
 {{< youtube EZDj_NRAX9o >}}
+
+and last but not least, a more complete application, that shows the capabillities both of the **Haptic Glove** and the API integration:
+
+
+{{< youtube HmqEJNGI6hY >}}
